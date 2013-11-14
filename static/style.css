@@ -1,0 +1,48 @@
+body{
+	background-color: silver; 
+	font-family: helvetica;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+div{
+	padding: 10px;
+	/*border: 1px solid white;*/
+}
+
+#wrapper{
+	float:left;
+	width:80%;
+}
+
+#navigation{
+	float:left;
+	padding: 0px;
+}
+
+.navigationItem{
+	float:left;
+	text-align: center;
+	margin-right: 10px;
+}
+
+.contentDetails{
+	font-size: 90%;
+}
+
+.clear{
+	clear: both;
+	padding: 0px;
+}
+
+.break{
+	border: 1px solid white;
+	padding: 0px;
+}
+
+#footer{
+	font-size: 70%;
+}

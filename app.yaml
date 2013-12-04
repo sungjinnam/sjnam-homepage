@@ -1,5 +1,5 @@
-application: sjnam-portforlio2
-version: 1
+application: si539-sjnam-assignmentfinal
+version: 2
 runtime: python27
 api_version: 1
 threadsafe: true

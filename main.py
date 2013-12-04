@@ -45,9 +45,20 @@ def doRender(handler, tname = 'index.html', values = { }):
     handler.response.out.write(outstr)
     return True
 
-class WorksHandler(webapp2.RequestHandler):
+class WorksHandler1(webapp2.RequestHandler):
     def get(self):
-        doRender(self, '/works.html')
+        doRender(self, '/works_research.html')
+class WorksHandler2(webapp2.RequestHandler):
+    def get(self):
+        doRender(self, '/works_mediaArt.html')
+class WorksHandler3(webapp2.RequestHandler):
+    def get(self):
+        doRender(self, '/works_sound.html')
+class WorksHandler4(webapp2.RequestHandler):
+    def get(self):
+        doRender(self, '/works_etc.html')
+
+
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         # self.response.write('Hello world!')
@@ -74,6 +85,9 @@ class MainHandler(webapp2.RequestHandler):
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
-    ('/works', WorksHandler)
+    ('/works_research', WorksHandler1),
+    ('/works_mediaArt', WorksHandler2),
+    ('/works_sound', WorksHandler3),
+    ('/works_etc', WorksHandler4)
     ], debug=True)
 

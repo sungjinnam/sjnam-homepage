@@ -2,12 +2,12 @@
 @import url(http://fonts.googleapis.com/css?family=Oxygen+Mono);
 
 body{
-	background-color: silver; 
+	background-color: #DADADB; 
 	font-family: 'Oxygen Mono', Tahoma, helvetica;
 }
 
 a{
-	text-decoration: none;
+	/*text-decoration: none;*/
 	color: black;
 }
 
@@ -16,25 +16,44 @@ div{
 	/*border: 1px solid white;*/
 }
 
+#header a{
+	text-decoration: none;
+}
+
 #wrapper{
 	float:left;
-	width:80%;
+	width:70%;
 }
 
 #navigation{
 	float:left;
 	padding: 0px;
+	font-size:120%;
 }
 
 .navigationItem{
 	float:left;
 	text-align: left;
 	margin-right: 10px;
+	/*font-weight: 550;*/
+}
+
+.navigationItem a {
+	text-decoration: none;
 }
 
 .navigationItem ul {
 	font-size: 80%;
 	padding-left: 0px;
+}
+
+.navigationItem2{
+	font-size: 75%;
+	margin-left: 10px;
+}
+
+.navigationItem2 a{
+	text-decoration: none;
 }
 
 /*
@@ -76,5 +95,5 @@ div{
 }
 
 #footer{
-	font-size: 70%;
+	font-size: 80%;
 }

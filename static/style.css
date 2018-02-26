@@ -16,6 +16,10 @@ div{
 	/*border: 1px solid white;*/
 }
 
+li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
 #header a{
 	text-decoration: none;
 }

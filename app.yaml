@@ -1,5 +1,5 @@
-application: si539-sjnam-assignmentfinal
-version: 3
+# application: si539-sjnam-assignmentfinal
+# version: 3
 runtime: python27
 api_version: 1
 threadsafe: true

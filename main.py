@@ -50,13 +50,13 @@ class WorksHandler1(webapp2.RequestHandler):
         doRender(self, '/works_research.html')
 class WorksHandler2(webapp2.RequestHandler):
     def get(self):
-        doRender(self, '/works_mediaArt.html')
-class WorksHandler3(webapp2.RequestHandler):
-    def get(self):
-        doRender(self, '/works_sound.html')
-class WorksHandler4(webapp2.RequestHandler):
-    def get(self):
-        doRender(self, '/works_etc.html')
+        doRender(self, '/works_noise.html')
+# class WorksHandler3(webapp2.RequestHandler):
+#     def get(self):
+#         doRender(self, '/works_sound.html')
+# class WorksHandler4(webapp2.RequestHandler):
+#     def get(self):
+#         doRender(self, '/works_etc.html')
 
 
 class MainHandler(webapp2.RequestHandler):
@@ -86,8 +86,8 @@ class MainHandler(webapp2.RequestHandler):
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
     ('/works_research', WorksHandler1),
-    ('/works_mediaArt', WorksHandler2),
-    ('/works_sound', WorksHandler3),
-    ('/works_etc', WorksHandler4)
+    ('/works_noise', WorksHandler2)
+    # ('/works_sound', WorksHandler3),
+    # ('/works_etc', WorksHandler4)
     ], debug=True)
 
